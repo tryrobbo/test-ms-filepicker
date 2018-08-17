@@ -12,7 +12,8 @@
   action: "query",
   multiSelect: true,
   advanced: {},
-  success: function(files) { console.log(files);console.log(JSON.stringify(files));  },
+  success: function(files) { console.log(files);
+$('#output').append('<strong>Returned from filepicker:</strong><br>'+JSON.stringify(files)+'<br><br>')  },
   cancel: function() { console.log("cancelled") },
   error: function(e) { console.log(e) }
 }
