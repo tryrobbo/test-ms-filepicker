@@ -10,7 +10,7 @@
   action: "query",
   multiSelect: true,
   advanced: {},
-  success: function(files) { console.log(files) },
+  success: function(files) { console.log(files);console.log(files.stringify()) },
   cancel: function() { console.log("cancelled") },
   error: function(e) { console.log(e) }
 }
